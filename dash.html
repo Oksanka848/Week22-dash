@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dash.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar place-items-center">
+        <div class="logo"><i class="ri-english-input"></i></div>
+        <div class="sidebar-items">
+          <div class="sidebar-item s-item-1 place-items-center">
+            <i class="ri-layout-grid-line"></i>
+          </div>
+          <div class="sidebar-item s-item-2 place-items-center">
+            <i class="ri-sound-module-line"></i>
+          </div>
+          <div class="sidebar-item s-item-3 place-items-center">
+            <i class="ri-user-line"></i>
+          </div>
+          <div class="sidebar-item s-item-4 place-items-center">
+            <i class="ri-line-chart-line"></i>
+          </div>
+        </div>
+      </div>
+      <div class="container d-grid">
+        <section class="main-container">
+          <div class="top-bar margin-b">
+            <h1 class="title">Dashboard</h1>
+            <button class="btn place-items-center">
+              <i class="ri-menu-3-line open-menu-icon"></i>
+            </button>
+          </div>
+          <div class="task-container d-grid margin-b">
+            <div class="exam card-1">
+              <p class="deadline">Сегодня</p>
+              <h2 class="exam-title" id="today"></h2>
+
+              <div class="start-testing-container d-flex"></div>
+            </div>
+            <div class="task-container-2 d-grid">
+              <div class="homework card-1">
+                <i class="ri-checkbox-circle-line check-mark"></i>
+                <h4>Homework</h4>
+                <p>For today's lesson</p>
+              </div>
+              <div class="reading card-1">
+                <i class="ri-checkbox-circle-line check-mark"></i>
+                <h4>Reading</h4>
+                <p>250 words per week</p>
+              </div>
+            </div>
+          </div>
+          <div class="group-task-container d-grid margin-b">
+            <div class="group-info card-2">
+              <div class="container">
+                <canvas id="myChart" width="600" height="400"></canvas>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="secondary-container">
+          <h2 class="calendar">My calendar</h2>
+
+          <div id="calendar"></div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script src="/bundle.js"></script>
+</html>

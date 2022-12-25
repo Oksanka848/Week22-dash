@@ -1,0 +1,25 @@
+{
+  "name": "dash",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "dash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oksanka848/Week22-dash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oksanka848/Week22-dash/issues"
+  },
+  "homepage": "https://github.com/Oksanka848/Week22-dash#readme",
+  "dependencies": {
+    "chart.js": "^4.1.1",
+    "fullcalendar": "^6.0.1",
+    "moment": "^2.29.4"
+  }
+}
