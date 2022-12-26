@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let day = moment();
             moment.locale('ru');
             document.getElementById('today').innerHTML=day.format('dddd');
-            let Chart = require('chart.js');
+            let Chart = require('chart.js/dist');
            let week = document.getElementById('myChart').getContext('2d');
             let myChart = new Chart(week, {
                 type: 'bar',
