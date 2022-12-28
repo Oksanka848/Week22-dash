@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
-        let FullCalendar = require('fullCalendar');
+        let FullCalendar = require('fullcalendar');
         
         var calendar = new FullCalendar.Calendar(calendarEl, {
             locale: 'ru',
@@ -84,12 +84,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         calendar.render();
+
         let moment = require('moment');
         require('moment/locale/ru');
         let day = moment();
             moment.locale('ru');
             document.getElementById('today').innerHTML=day.format('dddd');
-            let Chart = require('chart.js/dist');
+            let Chart = require('chart.js');
            let week = document.getElementById('myChart').getContext('2d');
             let myChart = new Chart(week, {
                 type: 'bar',
